@@ -1,0 +1,42 @@
+# ===== Build outputs =====
+bin/
+obj/
+out/
+
+# ===== Visual Studio / Rider =====
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===== .NET / NuGet =====
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ===== OS junk =====
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# ===== Logs / temp =====
+*.log
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.swp
+
+# ===== Secrets — NEVER commit these =====
+appsettings.*.local.json
+*.pfx
+*.key
+.env
+.env.*
+secrets.json
