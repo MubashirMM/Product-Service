@@ -9,15 +9,19 @@ namespace ProductService.Model
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; } = string.Empty;
 
+        [BsonElement("userId")]              // ← who owns this product
+        public string UserId { get; set; } = string.Empty;
+
         [BsonElement("name")]
         public string Name { get; set; } = string.Empty;
+
         [BsonElement("price")]
         public decimal Price { get; set; }
 
-
+        [BsonElement("category")]
         public string Category { get; set; } = string.Empty;
 
-        public int Stock { get; set; }        
-
+        [BsonElement("stock")]
+        public int Stock { get; set; }
     }
 }
